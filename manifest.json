@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Unsub News",
+  "version": "1.0",
+  "description": "Scan emails and show newsletters to unsubscribe from.",
+  "permissions": [
+    "identity",
+    "identity.email",
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "newsletter.png",
+    "default_popup": "popup.html"
+  },
+  "oauth2": {
+    "client_id": "309104061237-vnpmr4lk3qom5e2qhbo8l3kub1rnnoue.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/gmail.readonly"]
+  }
+}
